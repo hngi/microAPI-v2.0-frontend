@@ -18,5 +18,5 @@ In the assets folder, we have an images folder where all images should be sent t
 6. After making changes, do ```git add .```
 7. Commit your changes with a descriptive commit message```git commit -m "commit message"```
 8. To make sure there are no conflicts: ```git pull upstream develop```
-9. Push changes to develop branch: ```git push origin your-current-branch-name```
+9. Push changes to your new branch: ```git push origin your-current-branch-name```
 10. Create a pull request to the develop branch
