@@ -1,10 +1,11 @@
 #about {
 
+  $primary-color: #1A1B2D;
+  $secondary-color: #fff;
+  $tetiary-color: #f4f4f4;
+  $theme-color: #58BF8E;
+  $tertiary-dark: #5E5E66;
 
-
-$secondary-color: #5E5E66;
-$primary-color: #1A1B2D;
-$tetiary-color: #f4f4f4;
 
 * {
     padding: 0;
@@ -26,7 +27,7 @@ $tetiary-color: #f4f4f4;
     p {
         font-size: 18px;
         line-height: 27px;
-        color: $secondary-color;
+        color: $tertiary-dark;
     }
 
     .inner-content-1 { 
