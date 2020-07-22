@@ -1,18 +1,18 @@
 #contact {
-
   //write inside here only
-    * {
-    overflow-y: hidden;
+  * {
+    overflow: hidden;
   }
 
   .contact,
-  .contact__main {
+  .contact__main,
+  .contact__intro {
     margin: 5rem auto;
   }
 
   .contact__header,
   .contact__intro {
-    margin: auto;
+    margin: auto !important;
     text-align: center;
   }
 
@@ -26,8 +26,8 @@
 
   .form__element {
     width: 100%;
-    margin: .2rem 0;
-    padding: .5rem;
+    margin: 0.2rem 0;
+    padding: 0.5rem;
     border: solid 1px $tetiary-color;
   }
 
