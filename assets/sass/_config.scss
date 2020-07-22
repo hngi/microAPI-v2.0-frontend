@@ -14,7 +14,13 @@
   src: url('../fonts/gilroy-light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
 
+@font-face {
+  font-family: 'gilroyregular';
+  src: url('../fonts/gilroy-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -33,7 +39,12 @@ h1,h2,h3,h4,h5,h6 {
 
 
 //set default font 
-$default-font: 'Roboto', sans-serif;
+$default-font: 'gilroyregular';
+
+* {
+  font-family: $default-font;
+  overflow-x: hidden;
+}
 
 
 //theme colors
