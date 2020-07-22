@@ -1,8 +1,10 @@
 #about {
 
 
-$light-color: #f4f4f4;
+
 $secondary-color: #5E5E66;
+$primary-color: #1A1B2D;
+$tetiary-color: #f4f4f4;
 
 * {
     padding: 0;
@@ -35,7 +37,7 @@ $secondary-color: #5E5E66;
         h2 {
             font-size: 70px;
             line-height: 84px;
-            color: #1A1B2D;
+            color: $primary-color;
             padding: 50px 0 30px 0;
         }
 
@@ -45,7 +47,7 @@ $secondary-color: #5E5E66;
     }
 
     .inner-content-2 {
-        background-color: $light-color;
+        background-color: $tetiary-color;
 
         .inner-content2-txt {
             max-width: 718px;
