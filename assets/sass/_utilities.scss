@@ -36,3 +36,19 @@
     text-decoration: none;
   }
 }
+
+.tetiary-btn {
+  @include btn;
+  background-color: $tetiary-color;
+  color: $primary-color;
+  
+  &:hover {
+    border-color: $theme-color;
+    box-shadow: 0 0 3px 1px lighten($color: $primary-color, $amount: 20);
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+  }
+}
