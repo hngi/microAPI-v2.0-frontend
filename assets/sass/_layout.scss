@@ -76,7 +76,7 @@ header {
     display: none;
   }
 
-  @media (max-width: 993px) {
+  @media (max-width: $breakpoint-tablet) {
 
     .header__wrapper {
       justify-content: space-between;
@@ -262,6 +262,16 @@ header {
       }
     }
   }
+
+  @media (max-width: $breakpoint-phone) {
+    .mobile__nav {
+      .mobile__menu {
+        nav {
+          width: 55%;
+        }
+      }
+    }
+  }
 }
 
 footer {
@@ -316,7 +326,7 @@ footer {
     }
   }
 
-  @media (max-width: 993px) {
+  @media (max-width: $breakpoint-tablet) {
     .footer__wrapper {
       flex-direction: column;
 
