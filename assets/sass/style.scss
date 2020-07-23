@@ -7,9 +7,12 @@
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/faq';
+@import 'pages/auth';
+@import 'pages/blogs';
+@import 'pages/index';
+@import 'pages/blog_search';
+@import 'pages/signup';
 @import 'pages/recoverpassword';
-<<<<<<< Updated upstream
-@import 'pages/auth';
-=======
-@import 'pages/auth';
->>>>>>> Stashed changes
+//dashboard area css
+@import 'dashboard/index';
+
