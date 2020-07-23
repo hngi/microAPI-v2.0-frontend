@@ -23,19 +23,14 @@ main{
             .search_div{
                 position: relative;
 
-                .blog_search{
+                .blog_search_input{
                     width: 300px;
                     height: 40px;
                     padding-left: 40px;
                     padding-right: 35px;
-                    background-color: #E5E5E5;
+                    background-color: #E5E5E5!important;
                     border: none;
-                    border-radius: 6px;
-                    -webkit-border-radius: 6px;
-                    -moz-border-radius: 6px;
-                    -ms-border-radius: 6px;
-                    -o-border-radius: 6px;
-                    outline: none;
+                   
 
                         &::placeholder{
                             font-family: Inter;
@@ -72,8 +67,13 @@ main{
                             line-height: 19px;
                             color: #000000;
                         }
-                    
-                }
+                         border-radius: 6px!important;
+                         -webkit-border-radius: 6px!important;
+                         -moz-border-radius: 6px!important;
+                         -ms-border-radius: 6px!important;
+                         -o-border-radius: 6px!important;
+                         outline: none;
+}
                 .search_icon{
                     position: absolute;
                     top: 8px;
@@ -320,7 +320,7 @@ main{
             .search_div{
               margin: 16px 0 29px 0;
 
-             .blog_search {
+             .blog_search_input {
                  width: 315px;
                  height: 40px;
              }
