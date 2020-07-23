@@ -855,7 +855,8 @@ footer .footer__wrapper .footer__menus__container div ul li a:hover {
 }
 
 #documentation .side__nav {
-  padding: 20px 3rem;
+  padding: 20px 1rem 20px 3rem;
+  width: 30%;
 }
 
 #documentation .side__nav .input__div {
@@ -994,8 +995,7 @@ footer .footer__wrapper .footer__menus__container div ul li a:hover {
     flex-wrap: wrap;
   }
   #documentation .docs__topnav ul li {
-    line-height: 1.5;
-    margin: 5px 0;
+    line-height: 3;
   }
   #documentation .docs__topnav ul .active__state {
     border-bottom: 2px solid black;

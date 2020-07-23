@@ -36,7 +36,8 @@
   }
 
   .side__nav{
-    padding: 20px 3rem;
+    padding: 20px 1rem 20px 3rem;
+    width: 30%;
     .input__div{
       display: flex;
       border: 0.5px solid #E5E5E5;
@@ -160,8 +161,7 @@
       ul{
         flex-wrap: wrap;
         li{
-          line-height: 1.5;
-          margin: 5px 0;
+          line-height: 3;
         }
       .active__state{
         border-bottom: 2px solid black;
