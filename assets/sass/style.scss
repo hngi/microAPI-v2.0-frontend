@@ -7,6 +7,7 @@
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/faq';
+<<<<<<< HEAD
 
 $tablet: 700px;
 @mixin tablet {
@@ -221,3 +222,11 @@ $tablet: 700px;
     }
 
 }
+=======
+@import 'pages/blog_search';
+@import 'pages/signup';
+@import 'pages/recoverpassword';
+
+//dashboard area css
+@import 'dashboard/index';
+>>>>>>> c4c33041f0cfa9af4a54c83c248e0532d4597580

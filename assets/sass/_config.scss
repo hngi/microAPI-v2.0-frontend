@@ -46,6 +46,11 @@ $default-font: 'gilroyregular';
   overflow-x: hidden;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 
 //theme colors
 
@@ -53,3 +58,8 @@ $primary-color: #1A1B2D;
 $secondary-color: #fff;
 $tetiary-color: #f4f4f4;
 $theme-color: #58BF8E;
+
+//media breakpoints 
+
+$breakpoint-tablet: 993px;
+$breakpoint-phone: 576px;
