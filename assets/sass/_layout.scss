@@ -142,7 +142,7 @@ header {
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
-          width: 40%;
+          width: 50%;
           height: 100%;
           background-color: $secondary-color;
           animation: .3s linear 0s 1 running slide-left;
@@ -267,7 +267,7 @@ header {
     .mobile__nav {
       .mobile__menu {
         nav {
-          width: 55%;
+          width: 70%;
         }
       }
     }

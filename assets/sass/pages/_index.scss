@@ -1,80 +1,76 @@
 #home {
-
-    $tablet: 700px;
-
-    @mixin tablet {
-        @media (max-width: #{$tablet}) {
-            @content;
-        }
+  @mixin tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
     }
 
+    .section-header {
 
-}
-
-.header {
-
-    &__container {}
-
-    &__content {
+      &__content {
         margin: 4em auto;
         width: 70%;
         text-align: center;
 
         &--three {
-            text-align: center;
+          text-align: center;
 
-            &__group {
-                display: flex;
-                justify-content: space-between;
-            }
+          &__group {
+            display: flex;
+            justify-content: space-between;
+          }
         }
-    }
+      }
 
-    &__title {
+      &__title {
         color: $primary-color;
         font-weight: 800;
         font-size: 3em;
         overflow-y: hidden;
 
         @include tablet {
-            font-weight: 800;
-            font-size: 2em;
+          font-weight: 800;
+          font-size: 2em;
         }
-    }
+      }
 
-    &__title-two {
+      &__title-two {
         font-weight: 800;
         font-size: 2em;
         overflow: hidden;
-    }
+      }
 
-    &__title-three {
+      &__title-three {
+        <<<<<<< HEAD font-size: 1em;
+        overflow: hidden;
+        =======font-size: 1em;
+        overflow: hidden;
+        >>>>>>>b261c18715febce0269b82809c83b4322fc4a122
+      }
+
+      &__text {
         font-size: 1em;
         overflow: hidden;
-    }
+      }
 
-    &__text {
-        font-size: 1em;
-        overflow: hidden;
-    }
+      &__description {
+        <<<<<<< HEAD color: darken($color: $primary-color, $amount: 30);
 
-    &__description {
-        color: darken($color: $primary-color, $amount: 30);
+        =======color: darken($color: $primary-color, $amount: 30);
+        >>>>>>>b261c18715febce0269b82809c83b4322fc4a122
+      }
 
-    }
-
-    &__info {
+      &__info {
         color: lighten($color: $primary-color, $amount: 30);
         font-size: 1em;
         border-right: 0.01em solid lighten($color: $primary-color, $amount: 70);
 
         @include tablet {
-            font-size: 0.7em;
+          font-size: 0.7em;
         }
-    }
+      }
 
-    &__box {
-        background-image: url("../img/placeholder.png");
+      &__box {
+        <<<<<<< HEAD background-image: url("../img/placeholder.png");
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -82,133 +78,177 @@
 
 
         &__container {
-            max-width: 960px;
-            margin: 0 auto;
+          max-width: 960px;
+          margin: 0 auto;
         }
+      }
+
+      =======background-image: url("../img/placeholder.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      padding-top: 65%;
+
+      >>>>>>>b261c18715febce0269b82809c83b4322fc4a122 &__container {
+        max-width: 960px;
+        margin: 0 auto;
+      }
     }
+  }
 
-}
-
-.main-one {
-
-    background-color: #F4F4F4;
+  .main-one {
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     &__container {
-        margin: 4em auto;
-        width: 50%;
+      <<<<<<< HEAD margin: 4em auto;
+      width: 50%;
 
+      =======margin: 4em auto;
+      width: 50%;
+      >>>>>>>b261c18715febce0269b82809c83b4322fc4a122
     }
 
     &__content {}
 
     &__title {
+      font-weight: 800;
+      font-size: 2em;
+      overflow: hidden;
+
+      @include tablet {
         font-weight: 800;
-        font-size: 2em;
-        overflow: hidden;
-
-        @include tablet {
-            font-weight: 800;
-            font-size: 1.4em;
-        }
-
-
+        font-size: 1.4em;
+      }
     }
 
     &__description {
-        color: lighten($primary-color, 44);
-        font-size: 1em;
+      color: lighten($primary-color, 44);
+      font-size: 1em;
     }
 
     &__box {
-        background-image: url("../img/placeholder.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        padding-top: 80%;
+      <<<<<<< HEAD background-image: url("../img/placeholder.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      padding-top: 80%;
 
+      =======background-image: url("../img/placeholder.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      padding-top: 80%;
 
-        &__container {
-            max-width: 960px;
-            margin: 0 auto;
-
-        }
+      >>>>>>>b261c18715febce0269b82809c83b4322fc4a122 &__container {
+        max-width: 960px;
+        margin: 0 auto;
+      }
     }
+  }
 
-}
-
-.main-two {
-
-    background-color: #F4F4F4;
+  .main-two {
+    background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     &__container {
-        margin: 4em auto;
-        width: 50%;
-        text-align: center;
+      <<<<<<< HEAD margin: 4em auto;
+      width: 50%;
+      text-align: center;
 
+      =======margin: 4em auto;
+      width: 50%;
+      text-align: center;
+      >>>>>>>b261c18715febce0269b82809c83b4322fc4a122
     }
 
     &__title {
-        font-weight: 800;
-        font-size: 1.2em;
-        overflow: hidden;
-        text-transform: uppercase;
+      font-weight: 800;
+      font-size: 1.2em;
+      overflow: hidden;
+      text-transform: uppercase;
 
-        @include tablet {
-            font-weight: 800;
-            font-size: 0.9em;
-        }
+      @include tablet {
+        font-weight: 800;
+        font-size: 0.9em;
+      }
     }
 
     &__list {
-        margin: 0 1em;
-        height: 30vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      <<<<<<< HEAD margin: 0 1em;
+      height: 30vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-        i {
-            color: lighten($color: $primary-color, $amount: 50)
-        }
+      i {
+        color: lighten($color: $primary-color, $amount: 50)
+      }
     }
+  }
+
+  =======margin: 0 1em;
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  >>>>>>>b261c18715febce0269b82809c83b4322fc4a122 i {
+    color: lighten($color: $primary-color, $amount: 50);
+  }
+}
 }
 
-
 .main-three {
-    background-color: $tetiary-color;
+  background-color: $tetiary-color;
 
-    &__content {
-        margin: 3em;
-        padding: 3em;
-        background-color: $secondary-color;
+  &__content {
+    <<<<<<< HEAD margin: 3em;
+    padding: 3em;
+    background-color: $secondary-color;
 
-        &__title {
-            font-weight: 800;
-            font-size: 1.2em;
-            overflow: hidden;
-            text-transform: uppercase;
+    &__title {
+      font-weight: 800;
+      font-size: 1.2em;
+      overflow: hidden;
+      text-transform: uppercase;
 
-            @include tablet {
-                font-weight: 300;
-                font-size: 0.9em;
-            }
-        }
-
-        &__description {
-            color: darken($primary-color, 44);
-            font-size: 1em;
-        }
-
-        &__link {
-            color: darken($primary-color, 44);
-            background-color: lighten($primary-color, 80);
-            padding: 0 1em;
-        }
+      @include tablet {
+        font-weight: 300;
+        font-size: 0.9em;
+      }
     }
 
+    =======margin: 3em;
+    padding: 3em;
+    background-color: $secondary-color;
+
+    >>>>>>>b261c18715febce0269b82809c83b4322fc4a122 &__title {
+      font-weight: 800;
+      font-size: 1.2em;
+      overflow: hidden;
+      text-transform: uppercase;
+
+      @include tablet {
+        font-weight: 300;
+        font-size: 0.9em;
+      }
+    }
+
+    &__description {
+      color: darken($primary-color, 44);
+      font-size: 1em;
+    }
+
+    &__link {
+      color: darken($primary-color, 44);
+      background-color: lighten($primary-color, 80);
+      padding: 0 1em;
+    }
+  }
+}
 }
