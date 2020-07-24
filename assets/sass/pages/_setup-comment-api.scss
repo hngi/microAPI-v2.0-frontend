@@ -131,6 +131,21 @@ p {
              margin: auto auto auto 120px;
              display: flex;
 
+                .s-links{
+                    &:hover {
+                       &::after {
+                           content: "";
+                           position: absolute;
+                           height: 5px;
+                           background-color: #121215;
+                           left: 0;
+                           right: 0;
+                           bottom: 0px;
+   
+                       }
+                    }
+
+                }
 
              .active{
                  &::after{
@@ -260,6 +275,8 @@ p {
              text-decoration: none;
              font-size: 1.1rem;
              font-family: 'gilroyregular';
+
+            
 
              &.active {
                  &:not(.hide) {
@@ -440,10 +457,23 @@ p {
             -o-transform: translateX(0px);
         }
 
+        .comment-api-content{
+            transform: translateX(-30px);
+            -webkit-transform: translateX(-30px);
+            -moz-transform: translateX(-30px);
+            -ms-transform: translateX(-30px);
+            -o-transform: translateX(-30px);
+         }
+
+         .message-icon svg{
+             width: 40px;
+             height: 40px;
+         }
+
        
 
         .commentapi-title{
-            font-size: 28px;
+            font-size: 19px;
             line-height: 36px;
             transform: translateX(-15px);
             -webkit-transform: translateX(-15px);
@@ -555,6 +585,14 @@ p {
             -ms-transform: translateX(0px);
             -o-transform: translateX(0px);
         }
+
+         .commentapi-title {
+             font-size: 17px;
+         }
+
+         .comentapi-subtitle {
+             font-size: 15px;
+         }
 
         #other__links_div {
             // top: 78.5%;
