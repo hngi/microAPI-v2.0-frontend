@@ -52,10 +52,14 @@
         text-align:center;
         .frame_img{
             display:flex;
+            width: 70%;
+            margin: auto;
+            padding:1.5em;
             img{
                 width: 150px;
                 height: 100px;
                 padding: 1em 2em;
+                
             }
         }
         
