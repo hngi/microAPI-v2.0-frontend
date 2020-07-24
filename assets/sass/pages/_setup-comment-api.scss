@@ -12,6 +12,10 @@ body {
     overflow-x: hidden;
 }
 
+a:link{
+    text-decoration: none;
+}
+
 h1,
 h5,
 h3,
@@ -63,19 +67,80 @@ p {
         color: #5E5E66;
     }
 
+    .rowx{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        flex-flow: nowrap;
+        width: 100%;
+        margin-left: 80px;
+    }
+
+    .ms-links-div{
+        // height: 154px;
+        border-top: 1px solid rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px 0;
+
+        .row1{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            // margin-bottom: 6px;
+            width: 100%;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+
+        .ms-links{
+            display: block;
+             font-family: 'gilroyregular';
+            height: 47px;
+            padding: 15px 17px;
+            font-size: 14px;
+            line-height: 16px;
+            background: #F4F4F4;
+            width: fit-content;
+            margin-bottom: 26px;
+            color: #000;
+            box-sizing: border-box;
+
+            &:nth-of-type(odd){
+                margin-right: 24px;
+                margin-left: 20px;
+            }
+            
+            
+
+            &.active{
+                background-color: #000;
+                color: #fff
+            }
+
+            & + a {
+                margin-right: 24px;
+            }
+
+        }
+    }
+
     .relative{
         position: relative;
     }
 
     .message-icon{
-        svg{
-
-            transform: translate(80px, 20px);
-            -webkit-transform: translate(80px, 20px);
-            -moz-transform: translate(80px, 20px);
-            -ms-transform: translate(80px, 20px);
-            -o-transform: translate(80px, 20px);
-        }
+        margin-right: 21px;
    }
 
 
@@ -125,6 +190,17 @@ p {
          margin-top: 40px;
          align-items: center;
          position: relative;
+
+         .hire{
+             color: #000;
+             &.active{
+                 color: #57bf8e;
+             }
+
+             &:hover{
+                 color: #57bf8e;
+             }
+         }
 
          .links{
              text-decoration: none;
@@ -449,6 +525,18 @@ p {
 @media (max-width: $breakpoint-phone) {
     #comment_main {
 
+        .rowx {
+            align-items: center;
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+
+
+        .ms-links-div{
+            display:flex
+        }
+
+
         .container-fluidx {
             transform: translateX(0px);
             -webkit-transform: translateX(0px);
@@ -458,11 +546,11 @@ p {
         }
 
         .comment-api-content{
-            transform: translateX(-30px);
-            -webkit-transform: translateX(-30px);
-            -moz-transform: translateX(-30px);
-            -ms-transform: translateX(-30px);
-            -o-transform: translateX(-30px);
+            // transform: translateX(-30px);
+            // -webkit-transform: translateX(-30px);
+            // -moz-transform: translateX(-30px);
+            // -ms-transform: translateX(-30px);
+            // -o-transform: translateX(-30px);
          }
 
          .message-icon svg{
@@ -475,21 +563,21 @@ p {
         .commentapi-title{
             font-size: 19px;
             line-height: 36px;
-            transform: translateX(-15px);
-            -webkit-transform: translateX(-15px);
-            -moz-transform: translateX(-15px);
-            -ms-transform: translateX(-15px);
-            -o-transform: translateX(-15px);
+            // transform: translateX(-15px);
+            // -webkit-transform: translateX(-15px);
+            // -moz-transform: translateX(-15px);
+            // -ms-transform: translateX(-15px);
+            // -o-transform: translateX(-15px);
             }
 
          .comentapi-subtitle {
              font-size: 16px;
              line-height: 14px;
-             transform: translateX(-15px);
-             -webkit-transform: translateX(-15px);
-             -moz-transform: translateX(-15px);
-             -ms-transform: translateX(-15px);
-             -o-transform: translateX(-15px);
+            //  transform: translateX(-15px);
+            //  -webkit-transform: translateX(-15px);
+            //  -moz-transform: translateX(-15px);
+            //  -ms-transform: translateX(-15px);
+            //  -o-transform: translateX(-15px);
          }
 
          .top-row{
@@ -522,6 +610,10 @@ p {
 
              .m-hide{
                  display: none;
+             }
+
+             .m-hidex{
+                 text-align: center;
              }
 
          }
@@ -587,11 +679,11 @@ p {
         }
 
          .commentapi-title {
-             font-size: 17px;
+             font-size: 22px;
          }
 
          .comentapi-subtitle {
-             font-size: 15px;
+             font-size: 16px;
          }
 
         #other__links_div {
@@ -679,6 +771,9 @@ p {
 #comment_main {
 
 
+    .rowx{
+        margin-left: 40px;
+    }
 
     .container-fluidx {
         transform: translateX(0px);
@@ -686,6 +781,10 @@ p {
         -moz-transform: translateX(0px);
         -ms-transform: translateX(0px);
         -o-transform: translateX(0px);
+  }
+
+  .commentapi-title{
+      font-size: 33px;
   }
 
      .second-menu{
@@ -738,18 +837,7 @@ p {
 
     #comment_main{
 
-        .message-icon {
-            
-            svg{
-                transform: translate(50px,15px);
-                -webkit-transform: translate(50px,15px);
-                -moz-transform: translate(50px,15px);
-                -ms-transform: translate(50px,15px);
-                -o-transform: translate(50px,15px);
-                }
-
-        }
-
+       
 
          .second-menu {
 
