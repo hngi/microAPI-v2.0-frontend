@@ -1,191 +1,201 @@
 #home {
-  @mixin tablet {
-    @media (max-width: $breakpoint-tablet) {
-      @content;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+ 
+ $tablet: 700px;
+ @mixin tablet {
+     @media (max-width: #{$tablet}) {
+         @content;
+     }
+   }
+ 
+ .dashboard {
+   &__container{
+     
+     &__img {
+       height: 30em;
+ 
+       @include tablet{
+         height: 10em;
+     }
+     
+     }
+   }
+ }
+ 
+ .item-one {
+    &__header{
+      
+     @include tablet{
+       font-size: 1em;
+     }
     }
-  }
-
-  .section-header {
-
-    &__content {
-      margin: 4em auto;
-      width: 70%;
-      text-align: center;
-
-      &--three {
-        text-align: center;
-
-        &__group {
-          display: flex;
-          justify-content: space-between;
-        }
-      }
+ 
+    &__text{
+     @include tablet{
+       font-size: 0.7em;
+     }
     }
-
-    &__title {
-      color: $primary-color;
-      font-weight: 800;
-      font-size: 3em;
-      overflow-y: hidden;
-
-      @include tablet {
-        font-weight: 800;
-        font-size: 2em;
-      }
-    }
-
-    &__title-two {
-      font-weight: 800;
-      font-size: 2em;
-      overflow: hidden;
-    }
-
-    &__title-three {
-      font-size: 1em;
-      overflow: hidden;
-    }
-
-    &__text {
-      font-size: 1em;
-      overflow: hidden;
-    }
-
-    &__description {
-      color: darken($color: $primary-color, $amount: 30);
-    }
-
-    &__info {
-      color: lighten($color: $primary-color, $amount: 30);
-      font-size: 1em;
-      border-right: 0.01em solid lighten($color: $primary-color, $amount: 70);
-
-      @include tablet {
-        font-size: 0.7em;
-      }
-    }
-
-    &__box {
-      background-image: url("../img/placeholder.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      padding-top: 65%;
-
-      &__container {
-        max-width: 960px;
-        margin: 0 auto;
-      }
-    }
-  }
-
-  .main-one {
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    &__container {
-      margin: 4em auto;
-      width: 50%;
-    }
-
-    &__title {
-      font-weight: 800;
-      font-size: 2em;
-      overflow: hidden;
-
-      @include tablet {
-        font-weight: 800;
-        font-size: 1.4em;
-      }
-    }
-
-    &__description {
-      color: lighten($primary-color, 44);
-      font-size: 1em;
-    }
-
-    &__box {
-      background-image: url("../img/placeholder.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      padding-top: 80%;
-
-      &__container {
-        max-width: 960px;
-        margin: 0 auto;
-      }
-    }
-  }
-
-  .main-two {
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    &__container {
-      margin: 4em auto;
-      width: 50%;
-      text-align: center;
-    }
-
-    &__title {
-      font-weight: 800;
-      font-size: 1.2em;
-      overflow: hidden;
-      text-transform: uppercase;
-
-      @include tablet {
-        font-weight: 800;
-        font-size: 0.9em;
-      }
-    }
-
-    &__list {
-      margin: 0 1em;
-      height: 30vh;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      i {
-        color: lighten($color: $primary-color, $amount: 50);
-      }
-    }
-  }
-
-  .main-three {
-    background-color: $tetiary-color;
-
-    &__content {
-      margin: 3em;
-      padding: 3em;
-      background-color: $secondary-color;
-
-      &__title {
-        font-weight: 800;
-        font-size: 1.2em;
-        overflow: hidden;
-        text-transform: uppercase;
-
-        @include tablet {
-          font-weight: 300;
-          font-size: 0.9em;
-        }
-      }
-
-      &__description {
-        color: darken($primary-color, 44);
-        font-size: 1em;
-      }
-
-      &__link {
-        color: darken($primary-color, 44);
-        background-color: lighten($primary-color, 80);
-        padding: 0 1em;
-      }
-    }
-  }
-}
+ }
+ 
+ .item-four {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ 
+   &__content {
+     border-right: 0.01em solid lighten($color: $primary-color, $amount: 70);
+   }
+ 
+   &__header {
+     overflow: hidden;
+   }
+ 
+   &__description {
+     color: darken($color: $tetiary-color, $amount: 40);
+   }
+ }
+ 
+ .item-five {
+     margin-top: 4em;
+     padding: 0 8em;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     background-color: $tetiary-color;
+ 
+     @include tablet{
+       padding: 0;
+   }
+ 
+     &__image-container{
+ 
+         display: flex;
+         justify-content: center;
+         &__img {
+           height: 30em;
+ 
+           @include tablet{
+             height: 10em;
+         }
+         }
+ 
+     }
+ }
+ 
+ .item-six {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+ 
+   &__icon {
+     color: darken($color: $secondary-color, $amount: 50);
+   }
+ }
+ 
+ .item-seven {
+   margin-top: 4em;
+   padding: 0 8em;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   background-color: $tetiary-color;
+ 
+   &__container {
+     display: flex;
+     justify-content: center;
+   }
+ 
+   &__img {
+     height: 30em;
+   }
+ 
+   @include tablet{
+     padding: 0;
+   }
+ 
+   &__image-container{
+ 
+       display: flex;
+       justify-content: center;
+       &__img {
+         height: 6em;
+ 
+         @include tablet{
+           height: 3em;
+         }
+       }
+   }
+ }
+ .item-eight {
+   background-color: $tetiary-color;
+ 
+   &--nine {
+     background-color: $secondary-color;
+   }
+ }
+ 
+ .item-nine {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: end;
+   align-items: center;
+   background-color: $tetiary-color;
+ 
+   &__content {
+     padding-left: 13em;
+ 
+     @include tablet{
+       padding-left: 10%;
+     }
+ 
+   }
+ 
+   &__item {
+     background-color: $secondary-color;
+     padding-left: 2em;
+     padding-bottom: 3em;
+ 
+     &__link {
+       color: $primary-color;
+       background-color: $tetiary-color;
+       padding:0  1em;
+ 
+       &__link:hover{
+             text-decoration: none;
+       }
+     }
+   }
+ 
+   &__button {
+       color: $secondary-color;
+       background-color: $primary-color;
+       font-size: 1.3em;
+       padding: 0 2%;
+       text-align: center;
+ 
+       @include tablet{
+         font-size: 0.8em;
+       }
+   }
+ }
+ 
+ .item-ten {
+ 
+   &__text {
+     text-transform: uppercase;
+ 
+     @include tablet{
+       font-size: 0.7em;
+     }
+   }
+ 
+   &__other {
+     background-color: $secondary-color;
+   }
+ }
+ 
+ 
+ 
