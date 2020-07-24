@@ -140,8 +140,8 @@
             <!-- Documentation Enpoints start here -->
 
             <div id="endpoint" class="tab__content">
-                <div class="container-fluid d-flex">
-                    <div class="quicknav col-12 col-md-3">
+                <div class="container-fluid d-flex flex-column flex-md-row">
+                    <div class="quicknav col-12 col-md-4 col-lg-3">
                         <div class="shortcut__search__form d-flex align-items-center">
                             <button type="submit" class="col-2 p-0">
                                 <span class="fa fa-search"></span>
@@ -152,19 +152,19 @@
                         <div class="shortcuts p-0">
                             <div class="shortcut">
                                 <h4 class="shortcut__heading">Sign In</h4>
-                                <a href="" class="shortcut__link d-flex">
+                                <a href="" class="shortcut__link col d-flex">
                                     <span class="shortcut__link__btn--post mr-3">
                                         POST
                                     </span>
                                     <span class="shortcut__link__text">Sign In with Email</span>
                                 </a>
-                                <a href="" class="shortcut__link d-flex">
+                                <a href="" class="shortcut__link col d-flex">
                                     <span class="shortcut__link__btn--post mr-3">
                                         POST
                                     </span>
                                     <span class="shortcut__link__text">Sign In with Google</span>
                                 </a>
-                                <a href="" class="shortcut__link d-flex">
+                                <a href="" class="shortcut__link col d-flex">
                                     <span class="shortcut__link__btn--post mr-3">
                                         POST
                                     </span>
@@ -215,8 +215,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="endpoints col-12 col-md-9 d-flex flex-column flex-md-row flex-wrap">
-                        <div class="endpoint__desc col-12 col-md-8">
+                    <div class="endpoints col-12 col-md-8 col-lg-9 mt-5 d-flex flex-column flex-lg-row">
+                        <div class="endpoint__desc col-12 col-lg-8">
                             <div class="endpoint">
                                 <h2 class="endpoint__heading">Sign In</h2>
                                 <h4 class="endpoint__subheading">Sign In With Email</h4>
@@ -236,9 +236,8 @@
                                         </div>
                                     </div>
                                     <div class="endpoint__test__textarea">
-                                        <textarea readonly id="">
-                                            https://microapi.dev/authenticationapi/signin?=true-user/this-could-be-multiline
-                                        </textarea>
+                                        <textarea readonly
+                                            id="">https://microapi.dev/authenticationapi/signin?=true-user/this-could-be-multiline</textarea>
                                         <div class="endpoint__test__copy">
                                             <a onclick="copyText(this)">
                                                 <span class="fa fa-copy"></span>
@@ -302,7 +301,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="endpoint__sample col-12 col-md-4 d-flex flex-column">
+                        <div class="endpoint__sample col-12 col-lg-4 d-flex flex-column">
                             <div class="endpoint__sample__req">
                                 <p class="heading">Sample Request</p>
                                 <div class="req">
