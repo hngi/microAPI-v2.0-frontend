@@ -1,5 +1,4 @@
 //import partials
-
 @import 'config';
 @import 'utilities';
 @import 'layout';
@@ -7,13 +6,11 @@
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/faq';
-@import 'pages/recoverpassword';
 @import 'pages/blogs';
 @import 'pages/index';
-
 @import 'pages/blog_search';
 @import 'pages/signup';
 @import 'pages/recoverpassword';
-
+@import 'pages/blog_post';
 //dashboard area css
 @import 'dashboard/index';
