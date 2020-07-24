@@ -1,5 +1,4 @@
 //import partials
-
 @import 'config';
 @import 'utilities';
 @import 'layout';
@@ -13,5 +12,8 @@
 @import 'pages/signup';
 @import 'pages/recoverpassword';
 @import 'pages/comment-api';
+@import 'pages/blog_post';
+@import 'pages/doclayout';
+@import 'pages/auth';
 //dashboard area css
 @import 'dashboard/index';
