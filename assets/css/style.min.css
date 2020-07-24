@@ -3906,6 +3906,10 @@ p {
   text-decoration: none;
 }
 
+#documentation main {
+  text-align: justify;
+}
+
 #documentation .comment__microapi {
   display: flex;
   margin-top: 2rem;
