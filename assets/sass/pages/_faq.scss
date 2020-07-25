@@ -67,7 +67,8 @@
 		}
 	}
 }
-
+$breakpoint-tablet: 900px;
+$breakpoint-phone: 650px;
 @media (max-width: $breakpoint-tablet) {
    #faq{
    		.block{
