@@ -45,50 +45,93 @@ const copyText = caller => {
 
 // Display platform API request based on Language
 
-platform = document.querySelector("#req-platform");
-output = document.querySelector(".req__code code");
 
 
-platform.onchange = () => {
+platform = document.querySelectorAll(".req-platform");
+platform.forEach(item => {
+
+    item.onchange = () => {
+        codeEl = item.nextElementSibling;
+        console.log(codeEl.innerText);
+        if (item.value == "node") {
+            console.log(item.value);
+            codeEl.innerText = "node request goes here";
+
+        }
+
+        if (item.value == "php") {
+            console.log(item.value);
+
+            codeEl.innerText = "php request goes here";
+        }
+
+        if (item.value == "python") {
+            console.log(item.value);
+            codeEl.innerText = "python request goes here";
+        }
+    };
+});
+// console.log(platform);
+
+// output = document.querySelector(".req__code code");
 
 
-    if (platform.value == "node") {
-        output.innerHTML = "node request goes here";
-
-    }
-
-    if (platform.value == "php") {
-        output.innerHTML = "php request goes here";
-    }
-
-    if (platform.value == "python") {
-        output.innerHTML = "python request goes here";
-    }
-};
+// platform.onchange = () => {
 
 
-// Togle between api responses
+//     if (platform.value == "node") {
+//         output.innerHTML = "node request goes here";
 
+//     }
 
-// function showOk() {
-//     bad = document.querySelector("code#bad");
-//     ok = document.querySelector("code#ok");
-//     console.log();
+//     if (platform.value == "php") {
+//         output.innerHTML = "php request goes here";
+//     }
 
-//     if (ok.style.display == "block") {
-//         console.log("block");
-
-//         ok.style.display == "block";
+//     if (platform.value == "python") {
+//         output.innerHTML = "python request goes here";
 //     }
 // };
 
-// const showBad = () => {
-//     bad = document.querySelector("code#bad");
-//     ok = document.querySelector("code#ok");
-//     console.log("bad");
 
-//     if (ok.style.display == "none") {
-//         ok.style.display == "block";
-//     }
-//     bad.style.display == "none" ? bad.style.display == "block" : bad.style.display == "none";
-// }
+//Togle between api responses
+
+const showOk = caller => {
+
+    console.log(caller);
+
+    caller.classList.toggle('active_tab');
+    caller.nextElementSibling.classList.toggle('active_tab');
+
+    parent = caller.parentNode;
+    parentSibling = parent.nextElementSibling;
+    target = parentSibling.children;
+    ok = target[0];
+    bad = target[1];
+
+
+    if (ok.style.display == "none") {
+        ok.style.display = "block";
+        bad.style.display = "none";
+    }
+
+};
+
+const showBad = (caller) => {
+
+    caller.classList.toggle('active_tab');
+    caller.previousElementSibling.classList.toggle('active_tab');
+
+
+    parent = caller.parentNode;
+    parentSibling = parent.nextElementSibling;
+    target = parentSibling.children;
+    ok = target[0];
+    bad = target[1];
+
+    if (bad.style.display == "none") {
+        bad.style.display = "block";
+        ok.style.display = "none";
+    }
+
+};
