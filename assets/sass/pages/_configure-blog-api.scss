@@ -124,13 +124,14 @@ $imgpath: "../../assets/img";
         .mini-screen {
             .statistics, .documentation, .sample{
                 background-color: $primary-color;
-                margin: 20px;
+                margin: 8px;
                 width: 90%;
                 padding: 20px 20px 30px 40px;
             }  
 
             .documentation {
                 padding: 25px 20px 20px 40px;
+                margin: 8px;
 
                 ul {
                     list-style: circle;
@@ -141,7 +142,7 @@ $imgpath: "../../assets/img";
 
             .github {
                 width: 90%;
-                margin: 20px;
+                margin: 8px;
                 padding: 20px 40px;
             }
 

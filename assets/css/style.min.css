@@ -4453,13 +4453,14 @@ p {
 
 #configure .content-parent .content .mini-screen .statistics, #configure .content-parent .content .mini-screen .documentation, #configure .content-parent .content .mini-screen .sample {
   background-color: #E9E9E9;
-  margin: 20px;
+  margin: 8px;
   width: 90%;
   padding: 20px 20px 30px 40px;
 }
 
 #configure .content-parent .content .mini-screen .documentation {
   padding: 25px 20px 20px 40px;
+  margin: 8px;
 }
 
 #configure .content-parent .content .mini-screen .documentation ul {
@@ -4468,7 +4469,7 @@ p {
 
 #configure .content-parent .content .mini-screen .github {
   width: 90%;
-  margin: 20px;
+  margin: 8px;
   padding: 20px 40px;
 }
 
