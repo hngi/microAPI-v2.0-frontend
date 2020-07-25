@@ -97,7 +97,7 @@
                 .input_container{
                     float: left;
                     text-align: left;
-                    margin: 20px 50px;
+                    margin: 10px 50px;
 
                     label{
                         display: block;
@@ -117,7 +117,7 @@
                     width: 900px;
                     margin: auto;
                     text-align: left;
-                    padding: 20px 0px;
+                    padding: 10px 0px;
                     overflow: auto;
                     p{
                         font-family: Gilroy ☞;
@@ -205,7 +205,7 @@ $breakpoint-miniphone: 350px;
             &__form{
                 form{
                     .input_container{
-                        margin: 20px 37.5px;
+                        margin: 10px 37.5px;
                         input{
                             width: 350px;
                         }
@@ -224,7 +224,7 @@ $breakpoint-miniphone: 350px;
                         }
                     }
                     button{
-                        width: 350px;
+                        width: 350px; 
                     }
                 }
             }
@@ -249,7 +249,7 @@ $breakpoint-miniphone: 350px;
             &__form{
                 form{
                     .input_container{
-                        margin: 20px auto;
+                        margin: 10px auto;
                         float: none;
 
                         input{
