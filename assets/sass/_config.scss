@@ -30,6 +30,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'gilroymedium';
+  src: url('../fonts/gilroy-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 //initialise bold font for headings
 
@@ -43,7 +50,7 @@ $default-font: 'gilroyregular';
 
 * {
   font-family: $default-font;
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 body {
