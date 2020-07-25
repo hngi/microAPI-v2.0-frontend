@@ -9,6 +9,7 @@
   $black: #000000;
 
   * {
+    overflow: hidden;
     box-sizing: border-box;
   }
 
@@ -27,7 +28,7 @@
       }
 
       span:nth-child(2) {
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: bolder;
       }
     }
@@ -102,7 +103,7 @@
     }
 
     .quicknav {
-      border-right: solid 1px $border-color;
+      // border-right: solid 1px $border-color;
 
       .shortcut {
         margin-top: 2rem;
@@ -130,6 +131,7 @@
             border-radius: 5px;
             padding: 0.2rem 0.7rem;
             font-weight: bold;
+            text-align: center;
             color: $secondary-color;
           }
 
@@ -142,7 +144,7 @@
           }
 
           .shortcut__link__text {
-            font-size: 1.1rem;
+            word-spacing: .001rem;
           }
 
           &:hover {
@@ -154,7 +156,7 @@
 
     .endpoints {
       color: $hover-bg;
-      font-size: 1.2rem;
+
 
       .endpoint__desc {
         .endpoint {
@@ -181,8 +183,7 @@
                 width: 100%;
                 height: auto;
                 border: none;
-                padding: 0 1rem;
-                font-size: 1rem;
+
                 resize: none;
                 opacity: 0.5;
 
@@ -218,25 +219,24 @@
           .param {
             margin-top: 2rem;
 
-            .param__heading {
-            }
+            .param__heading {}
 
             .param__type {
               margin-top: 2rem;
 
               .param__type__heading {
                 span {
-                  font-size: 1.3rem;
+
                   font-weight: bolder;
                 }
 
                 .asterisk {
-                  font-size: 2rem;
+
                   color: red;
                 }
 
                 .param__type__data {
-                  font-size: 1rem;
+
                   padding: 0.2rem 0.8rem;
                   background: $tetiary-color;
                   border-radius: 5px;
@@ -272,10 +272,11 @@
 
         .req {
           select {
+            display: block;
             height: 2rem;
             margin-left: 1rem;
-            padding: 0.3rem;
-            font-size: 1rem;
+
+
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             background: $black;
@@ -288,6 +289,8 @@
           }
 
           .req__code {
+            display: block;
+            width: 100%;
             padding: 1rem;
             background: $black;
 
@@ -305,6 +308,11 @@
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             color: $secondary-color;
+
+            &:hover {
+              background: $black;
+              cursor: pointer;
+            }
           }
 
           .active_tab {
