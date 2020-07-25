@@ -85,8 +85,8 @@
         <div class="container-fluidx">
             <div class="row top-row mb-3">
                 <div class="col-lg-8 col-md-7 col-sm-12 mb-3">
-                    <div class="row no-wrap">
-                        <div class="col-lg-2 col-md-4 col-sm-2 message-icon">
+                    <div class="rowx no-wrap">
+                        <div class="message-icon">
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -95,7 +95,7 @@
                             </svg>
                         </div>
 
-                        <div class="col-lg-7 col-md-6 col-sm-10">
+                        <div class="comment-api-content">
                             <h1 class="commentapi-title">
                                 Comment MicroAPI
                             </h1>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="col-lg-4 col-md-5 col-sm-12">
                     <div class="row no-wrap">
-                        <div class="col-lg-3 col-md-4 col-sm-5">
+                        <div class="col-lg-4 col-md-4 col-sm-5">
                             <p class="user-title">
                                 Users
                             </p>
@@ -117,18 +117,25 @@
                         </div>
                         <div class="v-divider"></div>
 
-                        <div class="col-lg-3 col-md-4 col-sm-5">
+                        <div class="col-lg-4 col-md-4 col-sm-5">
                             <p class="rating-title">
                                 Ratings
                             </p>
                             <h3 class="rating-number">
                                 <span class="star">
-                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    <!-- <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M11.515 1.6268C11.7081 0.523385 13.2919 0.523387 13.485 1.62681L14.8018 9.14856C14.8948 9.68013 15.3929 10.042 15.9272 9.96622L23.4877 8.89417C24.5968 8.73691 25.0862 10.2431 24.0965 10.7678L17.3498 14.3444C16.873 14.5972 16.6827 15.1827 16.9199 15.6674L20.2758 22.5266C20.7681 23.5329 19.4868 24.4637 18.682 23.6846L13.1955 18.3733C12.8078 17.998 12.1922 17.998 11.8045 18.3733L6.31801 23.6846C5.51316 24.4637 4.23191 23.5329 4.72421 22.5266L8.08012 15.6674C8.31729 15.1827 8.12705 14.5972 7.65025 14.3444L0.903533 10.7678C-0.0861902 10.2431 0.403209 8.73691 1.51231 8.89417L9.07282 9.96622C9.60713 10.042 10.1052 9.68013 10.1982 9.14856L11.515 1.6268Z"
                                             fill="#121215" />
+                                    </svg> -->
+                                    <svg width="31" height="29" viewBox="0 0 31 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.5489 0.927048C14.8483 0.0057373 16.1517 0.00573993 16.4511 0.927051L19.2045 9.40122C19.3384 9.81324 19.7223 10.0922 20.1555 10.0922L29.0658 10.0922C30.0345 10.0922 30.4373 11.3318 29.6536 11.9012L22.445 17.1385C22.0945 17.3932 21.9479 17.8446 22.0818 18.2566L24.8352 26.7308C25.1345 27.6521 24.0801 28.4182 23.2963 27.8488L16.0878 22.6115C15.7373 22.3568 15.2627 22.3568 14.9122 22.6115L7.70365 27.8488C6.91994 28.4182 5.86546 27.6521 6.16481 26.7307L8.91824 18.2566C9.05211 17.8446 8.90545 17.3932 8.55497 17.1385L1.34641 11.9012C0.562692 11.3318 0.96547 10.0922 1.93419 10.0922L10.8445 10.0922C11.2777 10.0922 11.6616 9.81324 11.7955 9.40122L14.5489 0.927048Z"
+                                            fill="#121215" />
                                     </svg>
+
                                 </span>
                                 <span class="number">
                                     4.6
@@ -141,6 +148,27 @@
         </div>
 
 
+
+        <div class="ms-links-div">
+
+            <div class="row1">
+                <a href="#" class="ms-links">Introduction</a>
+            
+                <a href="#" class="ms-links">API Reference</a>
+
+            </div>
+
+            <div class="row2">
+                <a href="#" class="ms-links">Video Guide</a>
+            
+                <a href="#" class="ms-links active">Tutorial</a>
+
+            </div>
+    
+                     
+        </div>
+
+
         <div class="row no-wrap second-menu">
 
             <button class="menu__btn" id="bugger" onclick="showMoreLinks(event, 'other__links_div', 'more__links_div')">
@@ -149,9 +177,9 @@
                 <span></span>
             </button>
 
-            <button id="more__links" onclick="showMoreLinks(event,'more__links_div', 'other__links_div')">
+            <!-- <button id="more__links" onclick="showMoreLinks(event,'more__links_div', 'other__links_div')">
                 More <span></span>
-            </button>
+            </button> -->
 
             
             
@@ -168,20 +196,20 @@
                 <!-- </div> -->
             </div>
 
-            <div class="col-lg-2 col-md-3 col-sm-12 m-hide">
-                <a href="#" class="hire" style="color: #57bf8e">Hire a Consultant</a>
+            <div class="col-lg-2 col-md-3 col-sm-12 m-hidex">
+                <a href="hire_consultant.html" class="hire">Hire a Consultant</a>
             </div>
 
         </div>
 
-        <div id="more__links_div" class="hide">
+        <!-- <div id="more__links_div" class="hide">
             <a href="#" class="">Introduction</a>
             <a href="#">API Reference</a>
             <a href="#">Video Guide</a>
             <a href="#" class="active">Tutorial</a>
             <a href="#" class="hire">Hire a Consultant</a>
             
-        </div>
+        </div> -->
 
         <div id="other__links_div" class="hide">
 
@@ -440,9 +468,9 @@
                 <div>
                     <h6>Product</h6>
                     <ul>
-                        <li><a href="#">Authentication API</a></li>
+                        <li><a href="auth.html">Authentication API</a></li>
                         <li><a href="#">Models</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
 
@@ -457,8 +485,8 @@
                 <div>
                     <h6>Explore</h6>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
             </div>
