@@ -1,53 +1,43 @@
-// *{
-//     overflow-x:hidden !important;
-// }
-
 #hire_consultant{
-    
-
     .block{
-     
         width: 1000px;
         margin: auto;
         margin-bottom: 100px;
-
+        display: grid;
         &__banner{
             text-align: center;
             padding: 40px 0px 0px 0px;
 
             h1{
                 font-weight: 800;
-                font-size: 45px;
-                // line-height: 88px;
+                font-size: 72px;
+                line-height: 88px;
                 margin-bottom: 30px;
-               
             }
             p{
-                // font-family: Gilroy-Regular;
-                font-size: 23px;
-                // line-height: 30px;
+                font-family: Gilroy-Regular;
+                font-size: 24px;
+                line-height: 30px;
                 color: #5E5E66;
-                text-align: justify;
             }
         }
         &__services{
             padding-bottom: 40px;
-            padding: 4em 0em;
 
             &__header{
-                // padding: 1.5em 0em;
+                padding: 20px 0px;
                 text-align: center;
 
                 h4{
                     font-weight: 800;
-                    font-size: 37px;
-                    // line-height: 44px;
+                    font-size: 36px;
+                    line-height: 44px;
                     margin-bottom: 20px;
                 }
                 p{
-                    // font-family: Gilroy-Regular;
-                    font-size: 25px;
-                    // line-height: 30px;
+                    font-family: Gilroy-Regular;
+                    font-size: 24px;
+                    line-height: 30px;
                     color: #5E5E66;
                 }
             }
@@ -59,21 +49,21 @@
                     width: 350px;
                     height: 305px;
                     border: 1px solid #000000;
-                    padding: 1.5em;
+                    padding: 40px 25px;
                     float: left;
                     margin: 30px 50px;
                     position: relative;
 
                     h5{
-                        font-size: 20px;
+                        font-size: 18px;
                         line-height: 24px;
                         margin-bottom: 20px;
                     }
                     p{
-                        // font-family: Gilroy-Regular;
-                        font-size: 18px;
-                        // line-height: 16px;
-                        // color: #5E5E66;
+                        font-family: Gilroy-Regular;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #5E5E66;
                     }
                     button{
                         background: #F4F4F4;
@@ -82,7 +72,7 @@
                         width: 130px;
                         height: 50px;
                         font-size: 15px;
-                        // position: absolute;
+                        position: absolute;
                         bottom: 50px;
                         &:hover{
                             border: 1px solid $primary-color;
@@ -93,19 +83,16 @@
             }
         }
         &__form{
-            
             text-align: center;
-            margin:1em 0em;
 
-            h3{
-                
+            h4{
                 font-weight: 800;
                 font-size: 36px;
                 line-height: 44px;    
             }
             form{
                 margin: auto;
-                padding: 2em 0px;
+                padding: 35px 0px;
 
                 .input_container{
                     float: left;
@@ -114,10 +101,11 @@
 
                     label{
                         display: block;
-                        font-size: 24px;
-                        line-height: 28px;
-                        color: #121215;
-                        font-family: Gilroy ☞;
+                        font-size: 24px !important;
+                        line-height: 28px !important;
+                        color: #121215 !important;
+                        font-family: Gilroy ☞ !important;
+                        margin-bottom: .5rem !important;
                     }
                     input{
                         width: 400px;
@@ -130,7 +118,7 @@
                     margin: auto;
                     text-align: left;
                     padding: 20px 0px;
-
+                    overflow: auto;
                     p{
                         font-family: Gilroy ☞;
                         font-size: 24px;
@@ -138,7 +126,7 @@
                         color: #121215;
                         display: inline-block;
                         margin-bottom: 0;
-                        float:left;
+                        float: left;
                         width: 200px;
                     }
                     div{
@@ -157,8 +145,10 @@
                             }
                             label{
                                 display: inline-flex;
-                                width: 170px;
-                                margin-left: 10px;
+                                width: 170px !important;
+                                margin-left: 10px !important;
+                                font-size: 24px !important;
+                                margin-bottom: .5rem !important;
                             }
                         }
                     }
@@ -225,7 +215,7 @@ $breakpoint-miniphone: 350px;
                         div{
                             div{
                                 label{
-                                    width: 150px;
+                                    width: 150px !important;
                                 }
                             }
                         }
@@ -272,7 +262,7 @@ $breakpoint-miniphone: 350px;
                         div{
                             div{
                                 label{
-                                    width: 150px;
+                                    width: 150px !important;
                                 }
                             }
                         }
@@ -344,7 +334,7 @@ $breakpoint-miniphone: 350px;
                             width: 100%;
                         }
                         label{
-                            font-size: 20px;
+                            font-size: 20px !important;
                         }
                     }
                     .select_container{
@@ -353,9 +343,9 @@ $breakpoint-miniphone: 350px;
 
                         div{
                             div{
-                                font-size: 20px;
                                 label{
-                                    width: 170px;
+                                    width: 170px !important;
+                                    font-size: 20px !important;
                                 }
                             }
                         }
