@@ -20,7 +20,8 @@ $imgpath: "../../assets/img";
 }
 
 .content-parent {
-    padding: 50px 0 0 0;
+    padding: 80px 0 0 0;
+    margin-left: 255px;
 
     a {
         color: $dark-color;
@@ -100,9 +101,13 @@ $imgpath: "../../assets/img";
             }
 
             .primary-btn {
-                width: 90%;
+                // width: 90%;
+                // padding: 20px 50px 10px 50px;
+                // margin: 20px 50px 10px 50px;
+                width: 100%;
                 padding: 20px 50px 10px 50px;
-                margin: 20px 50px 10px 50px;
+                // padding: 10px 25px;
+                margin: 0 5% 5px 0;
 
                 span {
                     float: right;
@@ -120,7 +125,7 @@ $imgpath: "../../assets/img";
             .statistics, .documentation, .sample{
                 background-color: $primary-color;
                 margin: 20px;
-                width: 70%;
+                width: 90%;
                 padding: 20px 50px 30px 40px;
             }  
 
@@ -135,7 +140,7 @@ $imgpath: "../../assets/img";
             }
 
             .github {
-                width: 70%;
+                width: 90%;
                 margin: 20px;
                 padding: 20px 40px;
             }
@@ -190,66 +195,123 @@ $imgpath: "../../assets/img";
         }
     }
 
-    @media screen and (max-width: 915px) {
+    @media screen and (max-width: 1200px) {
+
+    }
+
+    @media screen and (max-width: 1000px) {
+
+        // #configure .content-parent .content .wide-screen .primary-btn {
+        //     width: 100%;
+        //     // padding: 10px 25px;
+        //     margin: 0 5% 5px 0;
+        // }
 
         #configure .content-parent .content .mini-screen .documentation {
-            padding: 25px 25px 20px 20px;
+            padding: 25px 10px 20px 15px;
+            margin: 8px;
         }
 
         #configure .content-parent .content .mini-screen .sample {
-            padding: 20px 25px 20px 20px;
+            padding: 20px 20px 20px 15px;
+            margin: 8px;
         }
 
         #configure .content-parent .content .mini-screen .statistics {
-            padding: 20px 25px 20px 20px;
+            padding: 20px 20px 20px 15px;
+            margin: 8px;
         }
 
+        #configure .content-parent .content .mini-screen .github {
+            padding: 20px 15px;
+            margin: 8px;
+        }
+
+        // .content {
+        //     font-size: 14px;
+        // }
+
         .content {
-            font-size: 14px;
+            font-size: 12px;
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
+
+        #configure .content-parent .content h5 {
+            font-size: 11px;
+            padding: 5px 5px 15px 0
         }
 
         img {
-            width: 160px;
+            width: 130px;
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
+        #configure .content-parent {
+            padding: 50px 0 0 0;
+            margin: 3%;
+        }
+
+        .content {
+            font-size: 12px;
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
+
+        #configure .content-parent .content h5 {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 860px) {
+
+        form label {
+            font-size: 13px !important;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
 
         #configure .content-parent .content .wide-screen {
-            width: 90%;
-            margin: 5%;
+            width: 94%;
+            margin: 3%;
             // padding: 20px 10px 20px 10px;
         }
 
         #configure .content-parent .content .mini-screen .documentation {
             padding: 25px 20px 20px 50px;
-            width: 90%;
-            margin: 5%;
+            width: 94%;
+            margin: 3%;
         }
 
         #configure .content-parent .content .mini-screen .sample {
             padding: 20px 50px 20px 50px;
-            width: 90%;
-            margin: 5%;
+            width: 94%;
+            margin: 3%;
         }
 
         #configure .content-parent .content .mini-screen .statistics {
             padding: 20px 25px 20px 10px;
-            width: 90%;
-            margin: 5%;
+            width: 94%;
+            margin: 3%;
             text-align: center;
         }
 
         #configure .content-parent .content .mini-screen .github {
-            width: 90%;
-            margin: 5%;
+            width: 94%;
+            margin: 3%;
             padding: 20px 50px;
         }
 
         #configure .content-parent .content .wide-screen .primary-btn {
-            width: 72%;
-            padding: 10px 25px;
-            margin: 0 5% 40px 15%;
+            width: 100%;
+            // padding: 10px 25px;
+            margin: 0 5% 5px 0;
         }
 
         #configure .content-parent .content h5 {

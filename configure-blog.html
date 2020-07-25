@@ -11,10 +11,67 @@
 <title>Micro Api - Configure Blog Api</title>
 </head>
 <body id="configure">
+ 
+    <!-- dashbord -->
+    <div id="dashboard">
+          <!-- dashboard side bar -->
+          <div class="sidebar">
+              <div class="sidebar__logo">
+                  <a href="../index.html"><img src="../assets/img/logo-alt.svg" alt=""></a>
+              </div>
   
+              <div class="sidebar__section">
+                  <div class="sidebar__section__header">
+                      <h5>Projects  <i class="fas fa-angle-up"></i></h5>
+                      <ul class="sidebar__section__header__list">
+                          <li><input type="checkbox"><p>Acme Project's</p></li>
+                          <li><input type="checkbox"><p>Sentry Project's</p></li>
+                          <button class="add-new"><span>+</span><p>New project</p></button>
+                      </ul>
+                  </div>
+                  <div class="sidebar__section__content">
+                      <div class="sidebar__section__content__sub">
+                          <h5>Tools <i class="fas fa-angle-up"></i></h5>
+                          <ul class="sidebar__section__content__sub__list">
+                              <li><p>MicroAPI</p></li>
+                              <li><p>Frontends</p></li>
+                              <li><p>Database</p></li>
+                          </ul>
+                      </div>
+                      <div class="sidebar__section__content__sub">
+                          <h5 class="sidebar__section__content__sub__title">Accounts <i class="fas fa-angle-up"></i></h5>
+                          <ul class="sidebar__section__content__sub__list">
+                              <li><p>Account settings</p></li>
+                              <li><p>Sign out</p></li>
+                          </ul>
+                      </div>
+                      <div class="sidebar__section__content__sub">
+                          <h5 class="sidebar__section__content__sub__title">Contribute <i class="fas fa-angle-up"></i></h5>
+                          <ul class="sidebar__section__content__sub__list">
+                              <li><p>Contribute to MicroAPI</p></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="content">
+              <header>
+                  <a class="menu"><i class="fas fa-bars"></i></a>
+                  <div class="profile_section">
+                      <a><i class="far fa-bell"></i></a>
+                      <div class="profile_section__pix">Samuel Eze<a><i class="far fa-user"></i></a></div>
+                  </div>
+              </header>
+              <div>
+              <!-- code goes here-->
+              </div>
+          </div>
+      </div>
+
+
   <div class="content-parent">
       <div class="content row">
-          <div class="wide-screen col-md-8">
+          <div class="wide-screen col-md-9">
             <div class="content-txt">
               <h2>Configure Blog Api</h2>
               <p>This is a map of user data. It contains sign up information needed from the user before auth</p>
@@ -74,7 +131,7 @@
             </span>  
             </div>
           </div>
-          <div class="mini-screen col-md-4">
+          <div class="mini-screen col-md-3">
             <div class="statistics">
               <h5>Statistics</h5>
               <p>Overall API Usage</p>
