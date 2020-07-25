@@ -7,6 +7,7 @@
   background-color: $secondary-color;
   padding-top: 1px;
   padding-left: 1px;
+  margin: 10px 0;
   width: 23%;
 
   &__shadow {
@@ -59,8 +60,23 @@
       & > a > button.primary-btn {
         padding: .2rem 1rem;
       }
+
+      .pretty {
+        margin: 0;
+      }
     }
   
   }
 }
 
+@media (max-width: $breakpoint-tablet) {
+  .api__box {
+    width: 48%;
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .api__box {
+    width: 100%;
+  }
+}
