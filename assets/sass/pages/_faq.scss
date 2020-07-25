@@ -9,13 +9,14 @@
 		
 		&__banner{
 			text-align: center;
-			padding: 50px 0px;
+			// padding: 50px 0px;
+			width:40%;
+			margin: 2em auto;
 
 			h1{
 				margin: auto;
-				font-weight:bold;
-				font-size: 72px;
-				line-height: 84px;
+				font-weight:bolder;
+				font-size: 45px;
 				color: $primary-color;
 				overflow: hidden;
 			}
@@ -56,6 +57,7 @@
 				color: #6C6C6C;
 				line-height: 22px;
 				font-size: 14px;
+				text-align: justify;
 			}
 
 			&--active{
@@ -86,14 +88,16 @@
 }
 @media (max-width: $breakpoint-phone) {
   	#faq{
+		
    		.block{
 
    			&__banner{
-  				padding: 20px 0px;
+				  padding: 20px 0px;
+				  width:100% !important;
 
           h1{
             font-size: 40px;
-            line-height: 70px;
+            // line-height: 70px;
           }
   			}
 
