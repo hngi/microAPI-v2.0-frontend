@@ -4565,7 +4565,7 @@ p {
 
 @media screen and (max-width: 900px) {
   #configure .content-parent {
-    padding: 50px 0 0 0;
+    padding: 80px 0 0 0;
     margin: 3%;
   }
   .content {
@@ -4576,6 +4576,12 @@ p {
   }
   #configure .content-parent .content h5 {
     font-size: 12px;
+  }
+  #configure .content-parent .content .mini-screen img {
+    width: 150px;
+  }
+  #configure .content-parent .content .wide-screen .primary-btn {
+    padding: 20px 50px 40px 10px;
   }
 }
 
@@ -4613,6 +4619,7 @@ p {
   }
   #configure .content-parent .content .wide-screen .primary-btn {
     width: 100%;
+    padding: 20px 50px 40px 0;
     margin: 0 5% 5px 0;
   }
   #configure .content-parent .content h5 {
