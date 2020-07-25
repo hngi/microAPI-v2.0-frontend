@@ -45,7 +45,7 @@
         h5{
           font-size: 14px;
           color: #979797;
-          font-family: Gilroy ☞;
+          // font-family: Gilroy ☞;
           line-height: 16px;
           letter-spacing: 0.085em;
           text-transform: uppercase;
@@ -69,7 +69,7 @@
             }
           }
           button{
-            font-family: Gilroy ☞;
+            // font-family: Gilroy ☞;
             font-size: 18px;
             line-height: 21px;
             color: $theme-color;
@@ -105,7 +105,7 @@
           h5{
             font-size: 14px;
             color: #979797;
-            font-family: Gilroy ☞;
+            // font-family: Gilroy ☞;
             line-height: 16px;
             letter-spacing: 0.085em;
             text-transform: uppercase;
@@ -137,13 +137,15 @@
     }
   }
   .content{
-    height: 100px;
+    // height: 100px;
     width: inherit;
     position: relative;
     padding: 0px !important;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+   
     header{
-      position: absolute;
+      // position: absolute;
       height: 70px;
       border-bottom: 1px solid #DADADA;
       width: 100%;
@@ -157,7 +159,7 @@
       }
       .profile_section{
         float: right;
-        font-family: Gilroy ☞;
+        // font-family: Gilroy ☞;
         font-size: 18px;
         color: #000000;
         height: 70px;
@@ -169,7 +171,7 @@
         
         &__pix{
           float: right;
-          display: inline-block;
+          // display: inline-block;
           border-left: 1px solid #DADADA;
           padding-left: 20px;
           margin: 0px 20px;
