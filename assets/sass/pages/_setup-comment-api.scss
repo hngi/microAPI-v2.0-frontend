@@ -758,6 +758,73 @@ p {
 }
 
 
+/* iPhone X Landscape */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : landscape) {
+
+#comment_main {
+
+
+    .rowx {
+        margin-left: 40px;
+    }
+
+    .container-fluidx {
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+
+    .commentapi-title {
+        font-size: 32px;
+    }
+
+    .second-menu {
+
+        #bugger {
+            display: block;
+        }
+
+        .links {
+
+            li {
+                font-size: 16px;
+            }
+        }
+
+
+    }
+
+    #other__links_div {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        overflow: scroll;
+        z-index: 1000;
+
+
+        &.hide {
+            display: none;
+        }
+
+    }
+
+    .main-section {
+
+        .t-hide {
+            display: none
+        }
+
+
+    }
+
+}
+
+
+}
+
+
 
 
 /*
