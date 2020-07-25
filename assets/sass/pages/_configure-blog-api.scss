@@ -135,7 +135,11 @@ $imgpath: "../../assets/img";
             .github {
                 width: 70%;
                 margin: 20px;
-                padding: 20px 10px;
+                padding: 20px 40px;
+            }
+
+            .github a {
+                color: $secondary-color;
             }
 
             select {
