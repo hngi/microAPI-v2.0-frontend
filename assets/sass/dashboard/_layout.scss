@@ -137,16 +137,15 @@
     }
   }
   .content{
-    // height: 100px;
+    height: 100%;
     width: inherit;
     position: relative;
     padding: 0px !important;
-    display: flex;
-    flex-direction: column;
+    overflow-y: hidden;
    
     header{
       // position: absolute;
-      height: 70px;
+      height: 11.2vh;
       border-bottom: 1px solid #DADADA;
       width: 100%;
       padding: 10px 40px 10px 10px;

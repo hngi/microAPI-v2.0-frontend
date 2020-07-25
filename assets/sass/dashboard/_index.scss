@@ -3,9 +3,9 @@
 
 #dashboard {
   .dashboard__main {
-    display: flex;
-    flex-direction: column;
+    height: 88.2vh;
     padding: 2% 5% !important;
+    overflow-y: auto;
 
     .dashboard__title {
       margin-bottom: 1rem;
@@ -26,6 +26,7 @@
 
       .dashboard__row {
         display: flex;
+        justify-content: space-between;
         width: 100%;
         flex-wrap: wrap;
         background-color: $tetiary-color;
