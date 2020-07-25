@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 
 * {
   font-family: "gilroyregular";
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 body {
@@ -656,7 +656,7 @@ footer .footer__wrapper .footer__menus__container div ul li a:hover {
 
 @media (max-width: 993px) {
   #home .section-five .container {
-    font-size: 1em;
+    font-size: 1.5em !important;
   }
 }
 
@@ -962,9 +962,8 @@ footer .footer__wrapper .footer__menus__container div ul li a:hover {
 }
 
 #about .content .inner-content-2 .inner-content2-txt {
-  width: 65%;
+  max-width: 879.26px;
   margin: auto;
-  padding: 2em 0em;
 }
 
 #about .content .inner-content-2 .inner-content2-txt div {
@@ -2064,7 +2063,7 @@ main .col {
 
 @media (max-width: 993px) {
   #home .section-five .container {
-    font-size: 1em;
+    font-size: 1.5em !important;
   }
 }
 
@@ -2595,38 +2594,33 @@ form #a-link {
 
 #hire_consultant .block__banner h1 {
   font-weight: 800;
-  font-size: 72px;
-  line-height: 88px;
+  font-size: 45px;
   margin-bottom: 30px;
 }
 
 #hire_consultant .block__banner p {
-  font-family: Gilroy-Regular;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 23px;
   color: #5E5E66;
+  text-align: justify;
 }
 
 #hire_consultant .block__services {
   padding-bottom: 40px;
+  padding: 4em 0em;
 }
 
 #hire_consultant .block__services__header {
-  padding: 20px 0px;
   text-align: center;
 }
 
 #hire_consultant .block__services__header h4 {
   font-weight: 800;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 37px;
   margin-bottom: 20px;
 }
 
 #hire_consultant .block__services__header p {
-  font-family: Gilroy-Regular;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 25px;
   color: #5E5E66;
 }
 
@@ -2639,23 +2633,20 @@ form #a-link {
   width: 350px;
   height: 305px;
   border: 1px solid #000000;
-  padding: 40px 25px;
+  padding: 1.5em;
   float: left;
   margin: 30px 50px;
   position: relative;
 }
 
 #hire_consultant .block__services__content__box h5 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
   margin-bottom: 20px;
 }
 
 #hire_consultant .block__services__content__box p {
-  font-family: Gilroy-Regular;
-  font-size: 14px;
-  line-height: 16px;
-  color: #5E5E66;
+  font-size: 18px;
 }
 
 #hire_consultant .block__services__content__box button {
@@ -2665,7 +2656,6 @@ form #a-link {
   width: 130px;
   height: 50px;
   font-size: 15px;
-  position: absolute;
   bottom: 50px;
 }
 
@@ -2676,9 +2666,10 @@ form #a-link {
 
 #hire_consultant .block__form {
   text-align: center;
+  margin: 1em 0em;
 }
 
-#hire_consultant .block__form h4 {
+#hire_consultant .block__form h3 {
   font-weight: 800;
   font-size: 36px;
   line-height: 44px;
@@ -2686,7 +2677,7 @@ form #a-link {
 
 #hire_consultant .block__form form {
   margin: auto;
-  padding: 35px 0px;
+  padding: 2em 0px;
 }
 
 #hire_consultant .block__form form .input_container {
@@ -2944,11 +2935,6 @@ p {
   overflow: hidden;
 }
 
-#comment_main {
-  margin-top: 68px;
-  margin-bottom: 296px;
-}
-
 #comment_main .container-fluidx {
   transform: translateX(40px);
   -webkit-transform: translateX(40px);
@@ -3088,9 +3074,8 @@ p {
 }
 
 #comment_main .second-menu {
-  height: 80px;
+  height: 60px;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  margin-top: 40px;
   align-items: center;
   position: relative;
 }
@@ -3134,11 +3119,11 @@ p {
 }
 
 #comment_main .second-menu .links li {
-  padding: 27px 0;
+  padding: 17px 0;
   position: relative;
   font-family: 'gilroyregular';
   display: inline;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 23px;
 }
 
@@ -3317,7 +3302,7 @@ p {
 }
 
 #comment_main .main-section {
-  margin-top: 60px;
+  margin: 2em 0em;
 }
 
 #comment_main .main-section .side_links {
@@ -3572,7 +3557,7 @@ p {
   color: #1A1B2D;
   padding: 0px;
   margin: auto;
-  width: 840px;
+  width: 700px;
   border: 1px solid #1A1B2D;
 }
 
@@ -3620,12 +3605,12 @@ p {
 
 #blog .blog__section__paragraph {
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 27px;
 }
 
 #blog .blog__section__list {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 170%;
   font-weight: bold;
 }
@@ -4698,7 +4683,6 @@ p {
 #dashboard .sidebar__section__header h5 {
   font-size: 14px;
   color: #979797;
-  font-family: Gilroy ☞;
   line-height: 16px;
   letter-spacing: 0.085em;
   text-transform: uppercase;
@@ -4726,7 +4710,6 @@ p {
 }
 
 #dashboard .sidebar__section__header__list button {
-  font-family: Gilroy ☞;
   font-size: 18px;
   line-height: 21px;
   color: #58BF8E;
@@ -4766,7 +4749,6 @@ p {
 #dashboard .sidebar__section__content__sub h5 {
   font-size: 14px;
   color: #979797;
-  font-family: Gilroy ☞;
   line-height: 16px;
   letter-spacing: 0.085em;
   text-transform: uppercase;
@@ -4801,16 +4783,15 @@ p {
 }
 
 #dashboard .content {
-  height: 100px;
+  height: 100%;
   width: inherit;
   position: relative;
   padding: 0px !important;
-  display: grid;
+  overflow-y: hidden;
 }
 
 #dashboard .content header {
-  position: absolute;
-  height: 70px;
+  height: 11.2vh;
   border-bottom: 1px solid #DADADA;
   width: 100%;
   padding: 10px 40px 10px 10px;
@@ -4826,7 +4807,6 @@ p {
 
 #dashboard .content header .profile_section {
   float: right;
-  font-family: Gilroy ☞;
   font-size: 18px;
   color: #000000;
   height: 70px;
@@ -4840,7 +4820,6 @@ p {
 
 #dashboard .content header .profile_section__pix {
   float: right;
-  display: inline-block;
   border-left: 1px solid #DADADA;
   padding-left: 20px;
   margin: 0px 20px;
@@ -4877,6 +4856,170 @@ p {
   }
   #dashboard .content header .menu {
     display: block;
+  }
+}
+
+.api__box {
+  display: flex;
+  box-shadow: 3px 3px 2px 2px #b3b3b3;
+  border: 2px solid #fff;
+  background-color: #fff;
+  padding-top: 1px;
+  padding-left: 1px;
+  margin: 10px 0;
+  width: 23%;
+}
+
+.api__box__shadow {
+  width: 100%;
+  height: 100%;
+  background-color: #f4f4f4;
+  border: 7px 3px 3px 7px solid #fff;
+}
+
+.api__box__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: .5rem;
+  box-shadow: inset 2px 2px 3px 2px #cbcce1;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.api__box__inner .api__box__heading {
+  border-bottom: 1px solid #abadce;
+  display: flex;
+  justify-content: space-between;
+}
+
+.api__box__inner .api__box__text {
+  padding: .7rem 0 .9rem;
+  line-height: 1;
+}
+
+.api__box__inner .api__box__text small {
+  font-family: 'gilroysemibold';
+}
+
+.api__box__inner .api__box__stats {
+  color: #52558e;
+}
+
+.api__box__inner .api__box__stats span {
+  color: #1A1B2D;
+  font-family: 'gilroysemibold';
+}
+
+.api__box__inner .api__box__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.api__box__inner .api__box__buttons > a > button.primary-btn {
+  padding: .2rem 1rem;
+}
+
+.api__box__inner .api__box__buttons .pretty {
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .api__box {
+    width: 48%;
+  }
+}
+
+@media (max-width: 650px) {
+  .api__box {
+    width: 100%;
+  }
+}
+
+#dashboard .dashboard__main {
+  height: 88.2vh;
+  padding: 2% 5% !important;
+  overflow-y: auto;
+}
+
+#dashboard .dashboard__main .dashboard__title {
+  margin-bottom: 1rem;
+}
+
+#dashboard .dashboard__main .dashboard__subtitle {
+  margin-bottom: 1rem;
+}
+
+#dashboard .dashboard__main .dashboard__subtitle h3 {
+  font-family: 'gilroyregular';
+}
+
+#dashboard .dashboard__main .dashboard__content {
+  display: flex;
+  flex-direction: column;
+  padding: .5rem 0;
+}
+
+#dashboard .dashboard__main .dashboard__content .dashboard__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
+  padding: 1.2rem;
+}
+
+#dashboard .dashboard__main .dashboard__content .search-box {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#dashboard .dashboard__main .dashboard__content .search-box__head {
+  margin-bottom: 1rem;
+}
+
+#dashboard .dashboard__main .dashboard__content .search-box__head h3 {
+  margin: 0;
+  padding: 0;
+  font-family: 'gilroyregular';
+}
+
+#dashboard .dashboard__main .dashboard__content .search-box__input label {
+  border: 1px solid lightgray;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+#dashboard .dashboard__main .dashboard__content .search-box__input label i {
+  margin-right: 3%;
+  color: #8e8e8e;
+}
+
+#dashboard .dashboard__main .dashboard__content .search-box__input label input {
+  border: none;
+  padding: .5rem;
+}
+
+#dashboard .dashboard__main .dashboard__content .search-box__input label input:focus {
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1200px) {
+  #dashboard .dashboard__main .dashboard__content .search-box__input label {
+    width: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  #dashboard .dashboard__main .dashboard__content .search-box__input label {
+    width: 100%;
   }
 }
 

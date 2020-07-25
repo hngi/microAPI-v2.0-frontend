@@ -50,7 +50,7 @@ $default-font: 'gilroyregular';
 
 * {
   font-family: $default-font;
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 body {
