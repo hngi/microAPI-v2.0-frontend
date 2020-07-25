@@ -62,6 +62,13 @@
         &__list{
           li{
             margin: 20px 0px;
+
+            .pretty {
+              .spacer {
+                margin-right: 15px;
+              }
+            }
+            
             p{
               display: inline;
               margin-left: 20px;
