@@ -72,12 +72,26 @@
               }
             }
           }
+
+          @media (max-width: $breakpoint-tablet) {
+            label {
+              width: 60%;
+            }
+          }
+
+          @media (max-width: $breakpoint-phone) {
+            label {
+              width: 100%;
+            }
+          }
         }
        
       }
     }
   }
 }
+
+
 
 
 
