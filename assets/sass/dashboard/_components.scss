@@ -32,6 +32,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .pretty.p-switch .state {
+        &:before {
+          background-color: #D9534F;
+        }
+      }
+
+      .pretty.p-switch {
+        .state label:after {
+          background-color: #fff!important;
+        }
+      } 
     }
 
     .api__box__text {
