@@ -117,6 +117,8 @@ const showOk = caller => {
 
 };
 
+
+
 const showBad = (caller) => {
 
     caller.classList.toggle('active_tab');
@@ -135,3 +137,27 @@ const showBad = (caller) => {
     }
 
 };
+
+
+
+
+
+
+
+// Toggle API Reference Nested Nav
+
+more = document.querySelector('.more');
+
+more.addEventListener('click', () => {
+    parent = more.parentNode;
+    console.log(parent);
+
+    content = parent.nextElementSibling;
+    if (content.style.display == "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+    console.log(content);
+
+})
