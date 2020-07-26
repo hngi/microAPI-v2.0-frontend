@@ -1,0 +1,97 @@
+@import 'layout';
+@import 'components';
+
+#dashboard {
+  .dashboard__main {
+    height: 88.2vh;
+    padding: 2% 5% !important;
+    overflow-y: auto;
+
+    .dashboard__title {
+      margin-bottom: 1rem;
+    }
+
+    .dashboard__subtitle {
+      margin-bottom: 1rem;
+
+      h3 {
+        font-family: 'gilroyregular';
+      }
+    }
+
+    .dashboard__content {
+      display: flex;
+      flex-direction: column;
+      padding: .5rem 0;
+
+      .dashboard__row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: $tetiary-color;
+        padding: 1.2rem;
+      }
+
+      .search-box {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__head {
+          margin-bottom: 1rem;
+
+          h3 {
+            margin: 0;
+            padding: 0;
+            font-family: 'gilroyregular';
+          }
+        }
+
+        &__input {
+          label {
+            border: 1px solid lightgray;
+            width: 40%;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+
+            i {
+              margin-right: 3%;
+              color: darken($color: $tetiary-color, $amount: 40);
+            }
+
+            input {
+              border: none;
+              padding: .5rem;
+
+              &:focus {
+                border: none;
+                outline: none;
+              }
+            }
+          }
+
+          @media (max-width: $breakpoint-tablet) {
+            label {
+              width: 60%;
+            }
+          }
+
+          @media (max-width: $breakpoint-phone) {
+            label {
+              width: 100%;
+            }
+          }
+        }
+       
+      }
+    }
+  }
+}
+
+
+
+
+
