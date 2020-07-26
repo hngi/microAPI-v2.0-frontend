@@ -7,6 +7,7 @@
 <meta name="Description" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
 <link rel="stylesheet" href="../assets/css/style.min.css">
 <title>MicroAPI - Dashboard</title>
 </head><!DOCTYPE html>
@@ -35,8 +36,25 @@
                 <div class="sidebar__section__header">
                     <h5>Projects  <i class="fas fa-angle-up"></i></h5>
                     <ul class="sidebar__section__header__list">
-                        <li><input type="checkbox"><p>Acme Project's</p></li>
-                        <li><input type="checkbox"><p>Sentry Project's</p></li>
+                        <li>
+                          <div class="pretty p-icon">
+                            <input type="checkbox" />
+                            <div class="state">
+                              <i class="icon material-icons">done</i>
+                              <label><span class="spacer"></span>Acme Project's</label>
+                            </div>
+                          </div>
+                        </li>
+                        
+                        <li>
+                          <div class="pretty p-icon">
+                            <input type="checkbox" />
+                            <div class="state">
+                              <i class="icon material-icons">done</i>
+                              <label><span class="spacer"></span>Sentry Project's</label>
+                            </div>
+                          </div>
+                        </li>
                         <button class="add-new"><span>+</span><p>New project</p></button>
                     </ul>
                 </div>
@@ -85,7 +103,7 @@
             </div>
 
             <div class="dashboard__content">
-              
+
               <div class="dashboard__row">
 
                 <!-- Single box -->
@@ -93,22 +111,37 @@
                   <div class="api__box__shadow">
                     <div class="api__box__inner">
                       <div class="api__box__heading">
-                          <h5>Blog API</h5>   
+                          <h5>Blog API</h5> 
+                          
+                          <!-- toggle -->
+                          <div class="pretty p-switch p-fill">
+                            <input type="checkbox" />
+                            <div class="state p-success">
+                                <label></label>
+                            </div>
+                          </div>  
                       </div>
-
                       <div class="api__box__text">
                         <small>Services give funtionality to implement comments</small>
                       </div>
-
                       <div class="api__box__stats">
                         <p>Stats <br>
                           <span>3rq/hr</span>
                         </p>
                       </div>
-
                       <div class="api__box__buttons">
                         <a href="#"><button class="primary-btn">Configure</button></a>
-                        <input type="radio" name="" id="">
+                        <!-- <input type="radio" name="" id=""> -->
+                        <!-- success -->
+                        <div class="pretty p-default p-round p-toggle">
+                          <input type="checkbox" />
+                          <div class="state p-success p-on">
+                              <label></label>
+                          </div>
+                          <div class="state p-danger p-off">
+                              <label></label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -119,22 +152,36 @@
                   <div class="api__box__shadow">
                     <div class="api__box__inner">
                       <div class="api__box__heading">
-                          <h5>Blog API</h5>   
+                          <h5>Blog API</h5> 
+                          <!-- toggle -->
+                          <div class="pretty p-switch p-fill">
+                            <input type="checkbox" />
+                            <div class="state p-success">
+                                <label></label>
+                            </div>
+                          </div>   
                       </div>
-
                       <div class="api__box__text">
                         <small>Services give funtionality to implement comments</small>
                       </div>
-
                       <div class="api__box__stats">
                         <p>Stats <br>
                           <span>3rq/hr</span>
                         </p>
                       </div>
-
                       <div class="api__box__buttons">
                         <a href="#"><button class="primary-btn">Configure</button></a>
-                        <input type="radio" name="" id="">
+                        <!-- <input type="radio" name="" id=""> -->
+                        <!-- success -->
+                        <div class="pretty p-default p-round p-toggle">
+                          <input type="checkbox" />
+                          <div class="state p-success p-on">
+                              <label></label>
+                          </div>
+                          <div class="state p-danger p-off">
+                              <label></label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -145,22 +192,36 @@
                   <div class="api__box__shadow">
                     <div class="api__box__inner">
                       <div class="api__box__heading">
-                          <h5>Blog API</h5>   
+                          <h5>Blog API</h5>  
+                          <!-- toggle -->
+                          <div class="pretty p-switch p-fill">
+                            <input type="checkbox" />
+                            <div class="state p-success">
+                                <label></label>
+                            </div>
+                          </div>  
                       </div>
-
                       <div class="api__box__text">
                         <small>Services give funtionality to implement comments</small>
                       </div>
-
                       <div class="api__box__stats">
                         <p>Stats <br>
                           <span>3rq/hr</span>
                         </p>
                       </div>
-
                       <div class="api__box__buttons">
                         <a href="#"><button class="primary-btn">Configure</button></a>
-                        <input type="radio" name="" id="">
+                        <!-- <input type="radio" name="" id=""> -->
+                        <!-- success -->
+                        <div class="pretty p-default p-round p-toggle">
+                          <input type="checkbox" />
+                          <div class="state p-success p-on">
+                              <label></label>
+                          </div>
+                          <div class="state p-danger p-off">
+                              <label></label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -171,27 +232,46 @@
                   <div class="api__box__shadow">
                     <div class="api__box__inner">
                       <div class="api__box__heading">
-                          <h5>Blog API</h5>   
+                          <h5>Blog API</h5>  
+                          <!-- toggle -->
+                          <div class="pretty p-switch p-fill">
+                            <input type="checkbox" />
+                            <div class="state p-success">
+                                <label></label>
+                            </div>
+                          </div>  
                       </div>
-
                       <div class="api__box__text">
                         <small>Services give funtionality to implement comments</small>
                       </div>
-
                       <div class="api__box__stats">
                         <p>Stats <br>
                           <span>3rq/hr</span>
                         </p>
                       </div>
-
                       <div class="api__box__buttons">
                         <a href="#"><button class="primary-btn">Configure</button></a>
-                        <input type="radio" name="" id="">
+                        <!-- <input type="radio" name="" id=""> -->
+                        <!-- success -->
+                        <div class="pretty p-default p-round p-toggle">
+                          <input type="checkbox" />
+                          <div class="state p-success p-on">
+                              <label></label>
+                          </div>
+                          <div class="state p-danger p-off">
+                              <label></label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 
+              </div>
+
+              
+              <div class="dashboard__row">
+                <!-- Do not remove, code breaks without this empty div -->
               </div>
 
               <div class="search-box">
@@ -213,22 +293,18 @@
                   <div class="api__box__shadow">
                     <div class="api__box__inner">
                       <div class="api__box__heading">
-                          <h5>Blog API</h5>   
+                          <h5>Blog API</h5> 
                       </div>
-
                       <div class="api__box__text">
                         <small>Services give funtionality to implement comments</small>
                       </div>
-
                       <div class="api__box__stats">
-                        <p>Stats <br>
-                          <span>3rq/hr</span>
+                        <p><br>
+                          <span></span>
                         </p>
                       </div>
-
                       <div class="api__box__buttons">
-                        <a href="#"><button class="primary-btn">Configure</button></a>
-                        <input type="radio" name="" id="">
+                        <a href="#"><button class="secondary-btn">+ Add API</button></a>
                       </div>
                     </div>
                   </div>
@@ -239,22 +315,18 @@
                   <div class="api__box__shadow">
                     <div class="api__box__inner">
                       <div class="api__box__heading">
-                          <h5>Blog API</h5>   
+                          <h5>Blog API</h5> 
                       </div>
-
                       <div class="api__box__text">
                         <small>Services give funtionality to implement comments</small>
                       </div>
-
                       <div class="api__box__stats">
-                        <p>Stats <br>
-                          <span>3rq/hr</span>
+                        <p><br>
+                          <span></span>
                         </p>
                       </div>
-
                       <div class="api__box__buttons">
-                        <a href="#"><button class="primary-btn">Configure</button></a>
-                        <input type="radio" name="" id="">
+                        <a href="#"><button class="secondary-btn">+ Add API</button></a>
                       </div>
                     </div>
                   </div>
@@ -265,22 +337,18 @@
                   <div class="api__box__shadow">
                     <div class="api__box__inner">
                       <div class="api__box__heading">
-                          <h5>Blog API</h5>   
+                          <h5>Blog API</h5> 
                       </div>
-
                       <div class="api__box__text">
                         <small>Services give funtionality to implement comments</small>
                       </div>
-
                       <div class="api__box__stats">
-                        <p>Stats <br>
-                          <span>3rq/hr</span>
+                        <p><br>
+                          <span></span>
                         </p>
                       </div>
-
                       <div class="api__box__buttons">
-                        <a href="#"><button class="primary-btn">Configure</button></a>
-                        <input type="radio" name="" id="">
+                        <a href="#"><button class="secondary-btn">+ Add API</button></a>
                       </div>
                     </div>
                   </div>
@@ -291,22 +359,18 @@
                   <div class="api__box__shadow">
                     <div class="api__box__inner">
                       <div class="api__box__heading">
-                          <h5>Blog API</h5>   
+                          <h5>Blog API</h5> 
                       </div>
-
                       <div class="api__box__text">
                         <small>Services give funtionality to implement comments</small>
                       </div>
-
                       <div class="api__box__stats">
-                        <p>Stats <br>
-                          <span>3rq/hr</span>
+                        <p><br>
+                          <span></span>
                         </p>
                       </div>
-
                       <div class="api__box__buttons">
-                        <a href="#"><button class="primary-btn">Configure</button></a>
-                        <input type="radio" name="" id="">
+                        <a href="#"><button class="secondary-btn">+ Add API</button></a>
                       </div>
                     </div>
                   </div>
@@ -322,7 +386,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script> 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/$VERSION/dragula.min.js'></script>
 <script src="../assets/js/dashboard_sidebar.js"></script>
+<script src="../assets/js/dashboard.js"></script>
 </body>
 </html>
